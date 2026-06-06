@@ -13,7 +13,10 @@
     justify-content: space-between;
     padding: 0 100px;
     border: 1px solid #000;
-    height: 60px;
+    border-radius: 25px;
+    height: 70px;
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 123, 255, 0.2);
 }
 
 .header__logo__box {
@@ -26,13 +29,19 @@
     width: 36px;
     height: 36px;
     margin-right: 10px;
+    transition-duration: 500ms;
 }
-
+.header__logo__img:hover {
+    /* transform: (360deg); */
+    transform: scale(1.3);
+    
+}   
 .header__logo {
     font-family: roboto;
     font-weight: 700;
     font-size: 25px;
     letter-spacing: 1px;
+    color: #f6f6f6;
 }
 
 .header__list {
@@ -48,14 +57,15 @@
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 1px;
-    color: #696871;
+    color: #f6f6f6;
     transition-duration: 250ms;
     display: inline-block;
     height: 100%;
 }
+
 .header__link:hover {
-    color: #19191B;
-    border-bottom: 3px solid #19191B;
+    color: #7575ff;
+    border-bottom: 3px solid #7575ff;
 }
 
 /* .header__btn{
@@ -65,4 +75,3 @@
     background: #FF7143;
     border: none;
 } */
-

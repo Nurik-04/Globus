@@ -44,7 +44,7 @@ button span {
 }
 
 button:hover span {
-    /* color: #183153; */
+    color: #fafafa;
     animation: scaleUp 0.3s ease-in-out;
 }
 

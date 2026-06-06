@@ -1,14 +1,27 @@
 import React from 'react'
 import Header from "./Components/Header/Header"
 import Hero from './Components/Hero/Hero'
-
+import Footer from './Components/Footer/Footer'
 import "./App.css"
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Hero />
+    <div className='uiverse-midnight-sky'>
+      {/* <!-- From Uiverse.io by kiranmayee-abbireddy --> */}
+      <div className="sky-canvas">
+
+        <div className="stars stars-1"></div>
+        <div className="stars stars-2"></div>
+        <div className="stars stars-3"></div>
+
+        <div className="meteor m1"></div>
+        <div className="meteor m2"></div>
+        <div className="meteor m3"></div>
+        <Header />
+        <Hero />
+        <Footer />
+        <div className="moon"></div>
+      </div>
     </div>
   )
 }
