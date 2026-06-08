@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useRef } from 'react';
+import { useState, useEffect , useRef } from 'react';
 import music from "../../assets/music.mp3"
 
 import Aos from 'aos'
@@ -24,9 +24,8 @@ const Hero = () => {
     <div className="hero">
       <div className='container'>
         <div className="hero__box">
-          <audio src={music} ref={audioRef}>
+          <audio src={music} ref={audioRef} loop />
             <button className='hero__button' onClick={toggle}>{isPlay ? '⏸Pauza' : '▶Play'}</button>
-          </audio>
           {/* globus */}
           <div className="globe" data-aos="zoom-in" data-aos-duration="2000">
             <div className="globe__map"></div>
