@@ -9,7 +9,7 @@ const App = () => {
     <div className='uiverse-midnight-sky'>
       {/* <!-- From Uiverse.io by kiranmayee-abbireddy --> */}
       <div className="sky-canvas">
-
+        
         <div className="stars stars-1"></div>
         <div className="stars stars-2"></div>
         <div className="stars stars-3"></div>
@@ -17,11 +17,13 @@ const App = () => {
         <div className="meteor m1"></div>
         <div className="meteor m2"></div>
         <div className="meteor m3"></div>
+
+        <div className="moon"></div>
         <Header />
         <Hero />
         <Footer />
-        <div className="moon"></div>
       </div>
+      
     </div>
   )
 }
