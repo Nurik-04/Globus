@@ -1,23 +1,45 @@
 .hero {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hero__container {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;  
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 80%; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
-.hero__box{
+
+.hero__box {
     width: 459px;
     height: 461px;
     color: #fdfdfd;
+
+}
+
+.hero__title {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 77px;
+    letter-spacing: -2.5px;
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    font-family: Mulish;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+    margin-bottom: 50px;
 }
 
 /* From Uiverse.io by barisdogansutcu */
@@ -50,16 +72,14 @@
     transition: 100ms;
 }
 
-
+/* Globus */
 .globe {
-    width: 300px;
-    height: 300px;
+    width:  360px;
+    height: 360px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
     margin: 50px auto;
-    
-    /* globus ko‘rinishi */
     box-shadow:
         inset -30px -30px 50px rgba(0, 0, 0, 0.4),
         inset 20px 20px 40px rgba(255, 255, 255, 0.3),
@@ -70,17 +90,17 @@
 
 .globe__map {
     position: absolute;
-    border: 1px solid red;
     width: 200%;
     height: 100%;
-    
+
     background-image: url("../../images/Earth.png");
     background-repeat: repeat-x;
     background-size: cover;
-
+    box-shadow: 0px 0px 50px 49px rgba(61, 58, 58, 0.76) inset;
+    -webkit-box-shadow: 0px 0px 50px 49px rgba(61, 58, 58, 0.76) inset;
+    -moz-box-shadow: 0px 0px 50px 49px rgba(61, 58, 58, 0.76) inset;
     animation: rotateGlobe 20s linear infinite;
 }
-
 /* Aylanish */
 @keyframes rotateGlobe {
     from {
@@ -88,6 +108,42 @@
     }
 
     to {
+        transform: translateX(-50%);
+    }
+}
+
+.logos__wrapper {
+    overflow: hidden;
+
+}
+
+.logos__track {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+
+.logos__img {
+    height: 40px;
+    width: auto;
+    filter: brightness(1.1);  
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+.logos__img:hover {
+    filter: brightness(2);
+    
+    transform: scale(1.1);
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
         transform: translateX(-50%);
     }
 }
